@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Bookshelf</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Main content container -->
+    <div class="container">
+        <!-- Logo image -->
+        <img src="imageAssets/booklogo.jpg" alt="burnt orange and pink transparent Bookshelf Logo" class="logo">
+        <!-- Main heading for the website -->
+        <h1 class="main-heading">The Bookshelf</h1>
+        <!-- description for the website -->
+        <p class="sub-heading">Your cosy corner reading list, reviews & ratings.</p>
+        <!-- Form for adding a new book review -->
+        <form id="bookForm">
+            <!-- Input field for the author's name -->
+            <input type="text" id="author" placeholder="Author" required>
+            <!-- Input field for the book title -->
+            <input type="text" id="title" placeholder="Title" required>
+            <!-- Input field for the book genre -->
+            <input type="text" id="genre" placeholder="Genre" required>
+            <!-- Textarea for the book review -->
+            <textarea id="review" placeholder="Review" required></textarea>
+            <!-- Input field for the book rating, limited between 1 and 10 -->
+            <input type="number" id="rating" placeholder="Rating (out of 10)" min="1" max="10" required>
+            <!-- Submit button for the form -->
+            <button type="submit">Add Book</button>
+        </form>
+        <!-- Div to display the list of books added -->
+        <div id="bookList"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

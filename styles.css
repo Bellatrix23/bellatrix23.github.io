@@ -1,0 +1,125 @@
+/* Style the body with a black background and white text */
+body {
+    background-color: #000000;
+    color: #ffffff;
+    font-family: Arial, 'Arial Narrow', sans-serif;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+/* Style the container to center content and limit width */
+.container {
+    width: 80%;
+    max-width: 800px;
+    text-align: center;
+}
+
+/* Style the logo with specific dimensions and spacing */
+.logo {
+    width: 300px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+/* Style the main heading with a gradient text effect and fade-in animation */
+.main-heading {
+    font-size: 3em;
+    background: linear-gradient(45deg, purple, pink);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: fadeIn 2s;
+    /* Apply a fade-in animation over 2 seconds */
+}
+
+/* Style the sub-heading with italic text, spacing, and fade-in animation */
+.sub-heading {
+    font-size: 1.2em;
+    font-style: italic;
+    margin-bottom: 20px;
+    animation: fadeIn 3s;
+    /* Apply a fade-in animation over 3 seconds */
+}
+
+/* Style the form to layout inputs and buttons vertically with spacing */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+/* Style form inputs, textarea, and buttons with padding and rounded corners */
+form input,
+form textarea,
+form button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+/* Style the form button with a gradient background and white text */
+form button {
+    background: linear-gradient(45deg, purple, pink);
+    color: white;
+    cursor: pointer;
+    /* Change cursor to pointer on hover */
+}
+
+/* Change button opacity on hover for a visual effect */
+form button:hover {
+    opacity: 0.8;
+}
+
+/* Style the book list to display books in a column with spacing */
+#bookList {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Style individual book items with background color, padding, and rounded corners */
+.book {
+    background-color: #1e1e1e;
+    padding: 20px;
+    border-radius: 10px;
+    position: relative;
+}
+
+/* Style the buttons inside book items with position, color, and spacing */
+.book button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: rgb(255, 0, 128);
+    color: white;
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+    /* Round the corners */
+}
+
+/* Additional styling for edit button inside book items */
+.book button.edit {
+    background: rgb(255, 0, 128);
+    right: 60px;
+}
+
+/* Define the fadeIn animation with an opacity transition */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    /* Start with transparent */
+    to {
+        opacity: 1;
+    }
+
+    /* End with fully opaque */
+}
